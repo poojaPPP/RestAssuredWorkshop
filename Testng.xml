@@ -9,6 +9,7 @@
 <!--            </run>-->
 <!--        </groups>-->
 
+
         <classes>
             <class name = "exercises.RestAssuredExercises1Test">
                 <methods>
