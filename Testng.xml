@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suit"  thread-count="2" parallel="methods">
+    <test name="Test">
+        <parameter name="KeyzfromXmlParameter" value="valuefromXmlParameter"/>
+<!--        <groups>-->
+<!--            <run>-->
+<!--        <include name="smoke"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+
+        <classes>
+            <class name = "exercises.RestAssuredExercises1Test">
+                <methods>
+                    <include name = "requestUsZipCode90210_checkResponseCode_expect200"/>
+                    <include name = "requestUsZipCode99999_checkResponseCode_expect404"/>
+                    <include name ="requestUsZipCode90210_checkContentType_expectApplicationJson"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suit">
+    <test name="Test ">
+
+        <classes>
+            <class name="exercises.RestAssuredExercises1Test">
+                <methods>
+                    <include name = "requestUsZipCode90210_checkResponseCode_expect200"/>
+                    <include name = "requestUsZipCode99999_checkResponseCode_expect404"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
